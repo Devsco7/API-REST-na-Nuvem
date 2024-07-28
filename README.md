@@ -6,32 +6,32 @@ Java RESTful API criado para desafio final.
 ```mermaid
 classDiagram
     class User {
-        +Account account
-        +Feature[] features
-        +Card card
-        +News[] news
+        -Account account
+        -Feature[] features
+        -Card card
+        -News[] news
     }
 
     class Account {
-        +String Number
-        +String Agency
-        +float Balance
-        +float Limit
+        -String Number
+        -String Agency
+        -float Balance
+        -float Limit
     }
 
     class Feature {
-        +String icon
-        +String description
+        -String icon
+        -String description
     }
 
     class Card {
-        +String Number
-        +float Limit
+        -String Number
+        -float Limit
     }
 
     class News {
-        +String icon
-        +String description
+        -String icon
+        -String description
     }
 
     User "1" *-- "1" Account
