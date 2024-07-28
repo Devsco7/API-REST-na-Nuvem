@@ -1,0 +1,20 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:arn2024
+    username: arn2024
+    password:
+jpa:
+  show-sql: true
+  open-iv-view: false
+  hibernate:
+    ddl-auto: create # validate / update / create / create-drop
+  properties:
+    hibernate:
+      format_sql: true
+h2:
+  console:
+    enable: true
+    path: /h2-console
+    settings:
+      trace: false
+      web-allow-others: false
